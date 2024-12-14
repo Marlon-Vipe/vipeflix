@@ -1,0 +1,6 @@
+@vipeflixAPI_HostAddress = http://localhost:5250
+
+GET {{vipeflixAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

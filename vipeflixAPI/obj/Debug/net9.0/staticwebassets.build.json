@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "HjYQVFURNNP4isSvFUHGRiVZu1BZQ1ngi+h+xdjAgVQ=",
+  "Source": "vipeflixAPI",
+  "BasePath": "_content/vipeflixAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

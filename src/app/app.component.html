@@ -7,7 +7,12 @@
 </head>
 <body>
   <div>
-    <h1>Hello, {{ title }}</h1>
+<h2>Datos de la pelicula</h2>
+<div *ngFor="let movie of movies">
+  <p>Titulo: {{movie.title}} </p>
+  <p>Año: {{movie.year | date}} </p>
+  <p>Precio: {{movie.price | currency}} </p>
+</div>
     <router-outlet></router-outlet>
   </div>
 </body>

@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\iAmVi\\Desktop\\vipeflix\\vipeflixAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CB585ECB-E0B5-454E-A949-8122FB081091}|vipeflixAPI.csproj|c:\\users\\iamvi\\desktop\\vipeflix\\vipeflixapi\\vipeflixapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CB585ECB-E0B5-454E-A949-8122FB081091}|vipeflixAPI.csproj|solutionrelative:vipeflixapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB585ECB-E0B5-454E-A949-8122FB081091}|vipeflixAPI.csproj|c:\\users\\iamvi\\desktop\\vipeflix\\vipeflixapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB585ECB-E0B5-454E-A949-8122FB081091}|vipeflixAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "vipeflixAPI.csproj",
+              "DocumentMoniker": "C:\\Users\\iAmVi\\Desktop\\vipeflix\\vipeflixAPI\\vipeflixAPI.csproj",
+              "RelativeDocumentMoniker": "vipeflixAPI.csproj",
+              "ToolTip": "C:\\Users\\iAmVi\\Desktop\\vipeflix\\vipeflixAPI\\vipeflixAPI.csproj",
+              "RelativeToolTip": "vipeflixAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-11T04:47:53.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\iAmVi\\Desktop\\vipeflix\\vipeflixAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\iAmVi\\Desktop\\vipeflix\\vipeflixAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T03:23:19.921Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
