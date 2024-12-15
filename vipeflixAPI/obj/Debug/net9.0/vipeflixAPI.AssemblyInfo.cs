@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("vipeflixAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7928a6b4ae481054d5bee331fc2b3c45714fc8f8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fcb334344a95148d628c61dec3bdeebd1ca0514c")]
 [assembly: System.Reflection.AssemblyProductAttribute("vipeflixAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("vipeflixAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

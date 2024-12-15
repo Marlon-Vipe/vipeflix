@@ -6,14 +6,21 @@
   <title>Vipeflix</title>
 </head>
 <body>
-  <div>
-<h2>Datos de la pelicula</h2>
-<div *ngFor="let movie of movies">
-  <p>Titulo: {{movie.title}} </p>
-  <p>Año: {{movie.year | date}} </p>
-  <p>Precio: {{movie.price | currency}} </p>
-</div>
-    <router-outlet></router-outlet>
+<h2>Vipeflix</h2>
+  @for (movie of movies; track $index) {
+  <div class="movie-container">
+    <div style="display: flex; flex-direction: row; gap: 10px">
+      <div>
+        <img [ngSrc]="movies[$index].poster" priority="" id="movie-image" alt="{{movie.title}}" width="200" height="300">
+      </div>
+      <div>
+        <p  >{{$index + 1}} - {{movie.title}} </p>
+        <p  >{{movie.year | date}} </p>
+        <p  >{{movie.price | currency}} </p>
+      </div>
+    </div>
   </div>
+  }
+  <router-outlet></router-outlet>
 </body>
 </html>
