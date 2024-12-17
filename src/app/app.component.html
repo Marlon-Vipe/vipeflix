@@ -6,12 +6,12 @@
   <title>Vipeflix</title>
 </head>
 <body>
-<h2>Vipeflix</h2>
+<h2>Vipeflix</h2> 
   @for (movie of movies; track $index) {
   <div class="movie-container">
     <div style="display: flex; flex-direction: row; gap: 10px">
       <div>
-        <img [ngSrc]="movies[$index].poster" priority="" id="movie-image" alt="{{movie.title}}" width="200" height="300">
+        <img [ngSrc]="movies[$index].poster" [priority]="$index === 0" id="movie-image" alt="{{movie.title}}" width="200" height="300">
       </div>
       <div>
         <p  >{{$index + 1}} - {{movie.title}} </p>
