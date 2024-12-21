@@ -1,26 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vipeflix</title>
-</head>
-<body>
 <h2>Vipeflix</h2> 
+
+@if(!movies)
+{
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Loading_2.gif" alt="Loading ...">
+}@else if (movies.length === 0)
+{
+  <p>No hay peliculas</p>
+}@else 
+{
   @for (movie of movies; track $index) {
-  <div class="movie-container">
-    <div style="display: flex; flex-direction: row; gap: 10px">
-      <div>
-        <img [ngSrc]="movies[$index].poster" [priority]="$index === 0" id="movie-image" alt="{{movie.title}}" width="200" height="300">
-      </div>
-      <div>
-        <p  >{{$index + 1}} - {{movie.title}} </p>
-        <p  >{{movie.year | date}} </p>
-        <p  >{{movie.price | currency}} </p>
+    <div class="movie-container">
+      <div style="display: flex; flex-direction: row; gap: 10px">
+        <div>
+          <img [ngSrc]="movies[$index].poster" [priority]="$index === 0" id="movie-image" alt="{{movie.title}}" width="200" height="300">
+        </div>
+        <div>
+          <p>{{$index + 1}} - {{movie.title}}</p>
+          <p>{{movie.year | date}}</p>
+          <p>{{movie.price | currency}}</p>
+        </div>
       </div>
     </div>
-  </div>
-  }
-  <router-outlet></router-outlet>
-</body>
-</html>
+    }
+}
