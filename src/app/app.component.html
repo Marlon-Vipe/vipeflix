@@ -1,25 +1,5 @@
-<h2>Vipeflix</h2> 
+<h2>En Cines</h2>
+<app-list-of-movies></app-list-of-movies>
 
-@if(!movies)
-{
-  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Loading_2.gif" alt="Loading ...">
-}@else if (movies.length === 0)
-{
-  <p>No hay peliculas</p>
-}@else 
-{
-  @for (movie of movies; track $index) {
-    <div class="movie-container">
-      <div style="display: flex; flex-direction: row; gap: 10px">
-        <div>
-          <img [ngSrc]="movies[$index].poster" [priority]="$index === 0" id="movie-image" alt="{{movie.title}}" width="200" height="300">
-        </div>
-        <div>
-          <p>{{$index + 1}} - {{movie.title}}</p>
-          <p>{{movie.year | date}}</p>
-          <p>{{movie.price | currency}}</p>
-        </div>
-      </div>
-    </div>
-    }
-}
+<h2>Proximos Estrenos</h2>
+<app-list-of-movies></app-list-of-movies>
