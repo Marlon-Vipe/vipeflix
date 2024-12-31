@@ -1,3 +1,7 @@
+<button (click)="addMovie()">Agregar pelicula</button>
+<input type="file" style="display: none;" #fileInput>
+
+<button (click)="fileInput.click()">Cargar</button>
 @if(!movies)
 {
 <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Loading_2.gif" alt="Loading ...">
@@ -16,6 +20,7 @@
         <p>{{$index + 1}} - {{movie.title}}</p>
         <p>{{movie.year | date}}</p>
         <p>{{movie.price | currency}}</p>
+        <button (click)="deleteMovie($index)">Eliminar</button>
         </div>
     </div>
     </div>

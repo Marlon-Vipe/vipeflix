@@ -15,4 +15,17 @@ export class ListOfMoviesComponent implements OnInit{
 
   @Input({required: true})
   movies!: any[];
+
+  addMovie() {
+    this.movies.push({
+      title: 'Scooby Doo',
+      year: 2023,
+      price: 10,
+      poster: 'https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg'
+    })
+  }
+
+  deleteMovie(index: number) {
+    this.movies.splice(index, 1);
+  }
 }
