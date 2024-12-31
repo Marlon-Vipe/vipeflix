@@ -1,0 +1,10 @@
+@if(!list)
+{
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Loading_2.gif" alt="Loading ...">
+}@else if (list.length === 0)
+{
+<p>No hay peliculas</p>
+}@else 
+{
+<ng-content select="[container]"></ng-content>
+}
