@@ -1,9 +1,23 @@
 @if(!list)
 {
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Loading_2.gif" alt="Loading ...">
+    <div #loading>
+        <ng-content select="[loading]"></ng-content>
+    </div>
+
+    @if(!loading.innerHTML.trim())
+    {
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Loading_2.gif" alt="Loading ...">
+    }
 }@else if (list.length === 0)
 {
-<p>No hay peliculas</p>
+    <div #empty>
+        <ng-content select="[empty]"></ng-content>
+    </div>
+
+    @if(!empty.innerHTML.trim())
+    {
+        <p>No hay peliculas para mostrar ...</p>
+    }
 }@else 
 {
 <ng-content select="[container]"></ng-content>
