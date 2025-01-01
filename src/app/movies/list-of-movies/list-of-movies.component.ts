@@ -1,21 +1,18 @@
-import { CurrencyPipe, DatePipe } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input } from '@angular/core';
 import { GenericListComponent } from "../../shared/components/generic-list/generic-list.component";
-
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import { MaterialModule } from '../../material/material.module';
 @Component({
   selector: 'app-list-of-movies',
   standalone: true,
-  imports: [DatePipe, CurrencyPipe, GenericListComponent],
+  imports: [CommonModule, GenericListComponent, MaterialModule],
   templateUrl: './list-of-movies.component.html',
   styleUrl: './list-of-movies.component.css'
 })
-export class ListOfMoviesComponent implements OnInit{
-  ngOnInit(): void {
-
-  }
-
-  @Input({required: true})
-  movies!: any[];
+export class ListOfMoviesComponent {
+  @Input({required: true}) movies!: any[];
 
   addMovie() {
     this.movies.push({

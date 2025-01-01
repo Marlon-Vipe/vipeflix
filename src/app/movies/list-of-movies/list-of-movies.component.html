@@ -11,7 +11,9 @@
                 <p>{{$index + 1}} - {{movie.title}}</p>
                 <p>{{movie.year | date}}</p>
                 <p>{{movie.price | currency}}</p>
-                <button (click)="deleteMovie($index)">Eliminar</button>
+                <button mat-fab (click)="deleteMovie($index)">
+                    <mat-icon>delete</mat-icon>
+                </button>
                 </div>
             </div>
             </div>
