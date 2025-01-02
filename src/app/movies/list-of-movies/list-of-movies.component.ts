@@ -26,4 +26,6 @@ export class ListOfMoviesComponent {
   deleteMovie(index: number) {
     this.movies.splice(index, 1);
   }
+
+  // TODO
 }
