@@ -7,3 +7,11 @@
 #movie-image {
     width: 200px;
 }
+
+#delete-btn:hover i {
+    color: red !important;
+}
+
+#delete-btn i {
+    font-size: 1.5rem;  /* ajusta este valor según necesites */
+}

@@ -1,7 +1,8 @@
 <button (click)="addMovie()">Agregar</button>
 <app-generic-list [list]="movies">
     <ng-container container>
-        @for (movie of movies; track $index) {
+        @for (movie of movies; track $index) 
+        {
             <div class="movie-container">
             <div style="display: flex; flex-direction: row; gap: 10px">
                 <div>
@@ -11,8 +12,8 @@
                 <p>{{$index + 1}} - {{movie.title}}</p>
                 <p>{{movie.year | date}}</p>
                 <p>{{movie.price | currency}}</p>
-                <button mat-fab aria-label="Example icon button with a delete icon">
-                    <mat-icon>delete</mat-icon>
+                <button id="delete-btn" class="btn btn-link" (click)="deleteMovie($index)">
+                    <i class="bi bi-trash" style="color: black;"></i>
                 </button>
                 </div>
             </div>
