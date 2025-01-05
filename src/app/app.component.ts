@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ListOfMoviesComponent } from './movies/list-of-movies/list-of-movies.component';
+import { MenuComponent } from './shared/components/menu/menu.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ListOfMoviesComponent],
+  imports: [ListOfMoviesComponent, MenuComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
