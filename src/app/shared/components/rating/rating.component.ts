@@ -1,5 +1,5 @@
 import { NgClass } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-rating',
@@ -8,20 +8,16 @@ import { Component, Input, OnInit } from '@angular/core';
   templateUrl: './rating.component.html',
   styleUrl: './rating.component.css'
 })
-export class RatingComponent implements OnInit {
+export class RatingComponent{
 ngOnInit(): void {
-  this.maxRatingArray();
+  //this.maxRatingArray();
 }
-@Input({required: true}) 
-maxRating!: number;
+@Input({required: true, transform: (value: number) => Array(value).fill(0)}) 
+maxRating!: number[];
 
 @Input()
 selectedRating: number = 0;
 lastSelectedRating: number = 0;
-
-maxRatingArray(): number[] {
-  return Array(this.maxRating).fill(0);
-}
 
 handleMouseInput(index: number) {
   this.selectedRating = index + 1;
